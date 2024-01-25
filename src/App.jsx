@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import QuestionBox from './components/QuestionBox.jsx';
 import Score from './components/Result.jsx'; // Import the Score component
 import questions from './questions.jsx';
-import './App.css';
+import './App.css'; // Import the CSS file
 
 const App = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
@@ -28,11 +28,11 @@ const App = () => {
 
   const allQuestionsAnswered = answers.every((answer) => answer !== null);
 
-  // Calculate percentage
+  // Calculate the percentage
   const correctAnswers = answers.filter((answer) => answer).length;
   const percentage = (correctAnswers / questions.length) * 100;
 
-  // Set the container colour based on the percentage and darkMode
+  // Dynamically set the container class based on the percentage and darkMode
   let containerClassName = 'container';
   if (allQuestionsAnswered) {
     if (percentage < 50) {
@@ -44,16 +44,16 @@ const App = () => {
     }
   }
 
-  // Set the background color to dark or light mode
+  // Dynamically set the background color based on darkMode
   const backgroundColor = darkMode ? '#52baba' : '#23ccccb7';
 
   return (
     <div className={containerClassName} style={{ backgroundColor }}>
       {allQuestionsAnswered ? (
-        // Display the score after all questions are answered
+        // Display Score Component when all questions are answered
         <Score answers={answers} totalQuestions={questions.length} />
       ) : (
-        // Displays the current question
+        // Display QuestionBox Component for the current question
         <QuestionBox
           question={questions[currentQuestion - 1].text}
           options={questions[currentQuestion - 1].options}
@@ -64,11 +64,11 @@ const App = () => {
         />
       )}
 
-      {!allQuestionsAnswered && (
+      {/* {!allQuestionsAnswered && (
         <button onClick={handleHighlightClick}>
           {highlight ? 'Remove Highlight' : 'Highlight'}
         </button>
-      )}
+      )} */}
 
       <button className="mode-toggle-button" onClick={handleModeToggle}>
         {darkMode ? ' Dark Mode' : 'Light Mode'}

@@ -1,3 +1,5 @@
+/* App.css */
+
 body {
     margin: 0;
     display: flex;
@@ -6,34 +8,41 @@ body {
     min-height: 100vh;
     background-image: url("./DarkMode.jpg");
   }
- 
-.mode-toggle-button {
+  
+  .mode-toggle-button {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #000000; 
-    color: #fff; 
+    background-color: #000000;
+    color: #fff;
     border: none;
-    border-radius: 10px; 
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 2s ease; 
+    transition: background-color 2s ease;
   }
+  
   .mode-toggle-button:hover {
     background-color: #3a463a;
   }
   
   .container {
-    width: 600px; 
-    height: 400px; 
+    width: 600px;
+    height: 400px;
     padding: 20px;
-    background-color: #23ccccb7; 
-    border-radius: 8px; 
+    background-color: #23ccccb7;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; 
+    text-align: center;
     transition: background-color 0.3s ease;
   }
-
+  
+  .question-text.highlight {
+    background-color: #ff0000; /* Highlight color for the question text */
+    transition: background-color 0.3s ease; /* Transition for background color change */
+  }
+  
+  /* Style the options as buttons */
   ul {
     list-style: none;
     padding: 0;
@@ -44,11 +53,11 @@ body {
   }
   
   button.option-button {
-    width: 100%; 
-    height: 40px; 
-    margin: 5px 0; 
-    background-color: #000000; 
-    color: #fff; 
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    background-color: #000000;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -56,31 +65,33 @@ body {
   }
   
   button.option-button:hover {
-    background-color: #8b6dd1; 
+    background-color: #8b6dd1;
   }
   
   .score-container {
     text-align: center;
-    margin-top: 150px; 
+    margin-top: 150px;
   }
   
   .red-bg {
-    background-color: #e44040; 
+    background-color: #e44040;
   }
   
   .yellow-bg {
-    background-color: #eded4e; 
+    background-color: #eded4e;
   }
   
   .green-bg {
-    background-color: #42e342; 
+    background-color: #42e342;
   }
   
   .result-container {
     text-align: center;
-    margin-top: 50px; 
+    margin-top: 50px;
     padding: 20px;
-    border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+  
+  /* ... (rest of the styles) */
   
