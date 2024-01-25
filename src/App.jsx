@@ -45,7 +45,7 @@ const App = () => {
   }
 
   // Dynamically set the background color based on darkMode
-  const backgroundColor = darkMode ? '#52baba' : '#23ccccb7';
+  const backgroundColor = darkMode ? '#52baba' : '#000000';
 
   return (
     <div className={containerClassName} style={{ backgroundColor }}>
@@ -63,12 +63,6 @@ const App = () => {
           highlight={highlight}
         />
       )}
-
-      {/* {!allQuestionsAnswered && (
-        <button onClick={handleHighlightClick}>
-          {highlight ? 'Remove Highlight' : 'Highlight'}
-        </button>
-      )} */}
 
       <button className="mode-toggle-button" onClick={handleModeToggle}>
         {darkMode ? ' Dark Mode' : 'Light Mode'}

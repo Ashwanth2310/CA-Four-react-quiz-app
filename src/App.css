@@ -38,7 +38,7 @@ body {
   }
   
   .question-text.highlight {
-    background-color: #ff0000; /* Highlight color for the question text */
+    background-color: #e44040; /* Highlight color for the question text */
     transition: background-color 0.3s ease; /* Transition for background color change */
   }
   
