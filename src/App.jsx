@@ -28,11 +28,11 @@ const App = () => {
 
   const allQuestionsAnswered = answers.every((answer) => answer !== null);
 
-  // Calculate the percentage
+  // Calculate percentage
   const correctAnswers = answers.filter((answer) => answer).length;
   const percentage = (correctAnswers / questions.length) * 100;
 
-  // Dynamically set the container class based on the percentage and darkMode
+  // Set the container colour based on the percentage and darkMode
   let containerClassName = 'container';
   if (allQuestionsAnswered) {
     if (percentage < 50) {
@@ -44,16 +44,16 @@ const App = () => {
     }
   }
 
-  // Dynamically set the background color based on darkMode
+  // Set the background color to dark or light mode
   const backgroundColor = darkMode ? '#52baba' : '#23ccccb7';
 
   return (
     <div className={containerClassName} style={{ backgroundColor }}>
       {allQuestionsAnswered ? (
-        // Display Score Component when all questions are answered
+        // Display the score after all questions are answered
         <Score answers={answers} totalQuestions={questions.length} />
       ) : (
-        // Display QuestionBox Component for the current question
+        // Displays the current question
         <QuestionBox
           question={questions[currentQuestion - 1].text}
           options={questions[currentQuestion - 1].options}
