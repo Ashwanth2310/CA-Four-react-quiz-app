@@ -1,0 +1,96 @@
+/* App.css */
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background-image 0.3s ease; /* Transition for background image change */
+    background-image: url("./DarkMode.jpg");
+  }
+  
+  .dark-mode {
+    background-color: #2d2d2d; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+  }
+  
+ 
+.mode-toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #000000; /* Green button color, adjust as needed */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 10px; /* Increased border radius for a rounded button */
+    padding: 10px 20px; /* Increased padding for a larger button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color change */
+  }
+  .mode-toggle-button:hover {
+    background-color: #3a463a; /* Darker green on hover, adjust as needed */
+  }
+  
+  .container {
+    width: 600px; /* Fixed width for the container */
+    height: 400px; /* Fixed height for the container */
+    padding: 20px;
+    background-color: #23ccccb7; /* Red background color */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    text-align: center; /* Center-align text content */
+    transition: background-color 0.3s ease; /* Transition for background color change */
+  }
+  
+  /* Style the options as buttons */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  button.option-button {
+    width: 100%; /* Make button width 100% of its container */
+    height: 40px; /* Fixed height for the buttons */
+    margin: 5px 0; /* Adjust margin as needed */
+    background-color: #50c554; /* Green button color, adjust as needed */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.option-button:hover {
+    background-color: #45a049; /* Darker green on hover, adjust as needed */
+  }
+  
+  .score-container {
+    text-align: center;
+    margin-top: 150px; /* Adjust the margin-top as needed for vertical centering */
+  }
+  
+  .red-bg {
+    background-color: #e44040; /* Red background color */
+  }
+  
+  .yellow-bg {
+    background-color: #eded4e; /* Yellow background color */
+  }
+  
+  .green-bg {
+    background-color: #42e342; /* Green background color */
+  }
+  
+  .result-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin-top as needed for vertical centering */
+    padding: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+  
